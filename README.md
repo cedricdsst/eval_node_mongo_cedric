@@ -8,14 +8,10 @@ Modélisation de collections MongoDB et création d'une api nodeJs
 ### Modèle `Brand`
 
 ```typescript
-import { Schema, model } from 'mongoose';
 
-const brandSchema = new Schema({
     name: { type: String, required: true, unique: true },
     logo: { type: String }
-});
 
-const Brand = model('Brand', brandSchema);
 ```
 
 **Choix** :
@@ -25,9 +21,7 @@ const Brand = model('Brand', brandSchema);
 ### Modèle `Flipper`
 
 ```typescript
-import { Schema, model, Types } from 'mongoose';
 
-const flipperSchema = new Schema({
     name: { type: String, required: true, trim: true },
     price: { type: Number, required: true },
     condition: { type: String, required: true },
@@ -38,9 +32,7 @@ const flipperSchema = new Schema({
     mainImage: { type: String, required: true },
     additionalImages: { type: [String] },
     additionalInfo: { type: String }
-});
 
-const Flipper = model('Flipper', flipperSchema);
 ```
 
 **Choix** :
