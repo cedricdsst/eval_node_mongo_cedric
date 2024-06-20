@@ -1,5 +1,5 @@
 
-# Projet Flipper Management
+# Evaluation NodeJs MongoDB
 
 Modélisation de collections MongoDB et création d'une api nodeJs
 
