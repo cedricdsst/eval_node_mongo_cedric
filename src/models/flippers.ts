@@ -14,7 +14,7 @@ interface IFlipper extends Document {
     additionalInfo?: string;
 }
 
-// Schema for the Flipper
+
 const flipperSchema = new Schema<IFlipper>({
     name: { type: String, required: true, trim: true },
     price: { type: Number, required: true },
@@ -28,6 +28,6 @@ const flipperSchema = new Schema<IFlipper>({
 
 });
 
-// Create and export the model
+
 const Flipper = model<IFlipper>('Flipper', flipperSchema);
 export { Flipper, IFlipper };
